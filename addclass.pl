@@ -15,7 +15,7 @@ if (@ARGV) { # While the file has lines, iterate through the while loop
   }
 }
 
-# The script needs an argument to be run, otherwise it gives you directions
+# The script needs an argument to be run, otherwise it prints syntax information
 else { 
   print STDERR "usage: ./addclass listfile\n";
 }

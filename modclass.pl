@@ -1,5 +1,10 @@
 #!/usr/bin/perl
 
+# Workaround script: the addclass/createdb script combo
+# actually grants ALL permissions on *.*, so to remove
+# those we can run ./modclass on the same class list
+# to set the correct permissions.
+
 $password = 'smgdatabase';
 
 if (@ARGV) {
@@ -10,5 +15,5 @@ if (@ARGV) {
 }
 
 else {
-  print STDERR "usage: ./addclass listfile\n";
+  print STDERR "usage: ./modclass listfile\n";
 }

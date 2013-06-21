@@ -1,6 +1,9 @@
 #!/bin/bash
 
-BTICK='`'
+# This script creates a database like so:
+# ./createdb [database name] [user name] [database password]
+
+BTICK='`' # So that we don't accidentally escape our code...
 EXPECTED_ARGS=3
 E_BADARGS=65
 MYSQL=`which mysql`
